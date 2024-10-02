@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <script>
+        // Main heading 
+
+        var mainheading = document.createElement("h1");
+        mainheading.innerText = "NAGA UDAY KIRAN";
+        mainheading.style.textAlign = "center";
+        console.log(mainheading);
+
+        var details=document.createElement("p");
+        details.innerHTML="<b>Cell:</b> +91 7659837935"+", " + "<b>Email:</b> <a>nagauday7788@gmail.com</a>";
+        details.style.marginLeft="550px";
+
+        var linkedandgithub=document.createElement("p");
+        linkedandgithub.innerHTML="<b>LinkedIn:</b>"+" "+"https://www.linkedin.com/in/udaykiran" +", "+"<b>GitHub:</b>"+" "+"https://github.com/uday.com";
+        linkedandgithub.style.marginLeft="450px";
+
+        // Summary Section 
+
+        var obj = document.createElement("h3")
+        obj.innerHTML = "SUMMARY <hr>";
+        console.log(obj);
+        var content = document.createElement("p");
+        content.innerHTML = "Aspiring software engineer currently building a strong foundation in key technologies like <mark>Python, JavaScript, HTML, CSS, and Bootstrap</mark>. Eager to apply these skills in real-world scenarios, I am actively learning software development principles and version control using Git and GitHub. Passionate about contributing to innovative projects, I aim to collaborate with diverse teams to deliver impactful technology solutions. I am enthusiastic about joining Accenture as an Associate Software Engineer, where I can grow and leverage my skills to support digital transformation and create tangible value for clients.  "
+
+        //  Education  section 
+
+
+        var edu = document.createElement("h3");
+        edu.innerHTML = "EDUCATION<hr>"
+        var course = document.createElement("h4")
+        course.innerText = "Bachelor of Technology (CSE)" + " " + "2020-2024,"+"  "+"Hyderabad";
+
+
+        var courseyear = document.createElement("p")
+        courseyear.innerText = "2020-2024, Hyd";
+        courseyear.style.textAlign = "center";
+        courseyear.style.marginTop = "-40px";
+        courseyear.style.marginleft = "-70px";
+
+        var college=document.createElement("p");
+        college.innerText="Holy Mary Institute of Technology and Science.";
+        var collegeperecentage=document.createElement("p")
+        collegeperecentage.innerText = "6.71 CGPA";
+        collegeperecentage.style.textAlign = "center";
+        collegeperecentage.style.marginTop = "-40px";
+        collegeperecentage.style.marginleft = "-70px";
+
+
+
+        // project Section 
+
+        // project one 
+
+
+        var project=document.createElement("h3");
+        project.innerHTML="PROJECT<hr>";
+        var projectname=document.createElement("h5");
+        projectname.innerHTML="E-TRADING FOR ARTISAN CRAFTS:";
+        var ul=document.createElement("ul");
+        var li1=document.createElement("li");
+        li1.innerText="Artisan Connect is a dedicated e-trading platform designed to connect talented artisans with a global audience.";
+        li1.style.paddingBottom="25px";
+        var li2=document.createElement("li");
+        li2.innerHTML="Built using <mark> HTML and CSS</mark> for the <mark>frontend</mark>, and <mark>Python and Django</mark> for the <mark>backend</mark>, with <mark>SQL database</mark> this  platform <br>enables artisans to showcase and sell their unique crafts while promoting sustainable practices and cultural heritage."
+        ul.append(li1,li2);
+          
+
+        // project Two 
+
+
+        var projectnametwo=document.createElement("h5");
+        projectnametwo.innerText="SWIGGY CLONE WEB APPLICATION:"
+
+
+        var unorderlist=document.createElement("ul");
+        var listone=document.createElement("li");
+        listone.innerText="The Swiggy Clone project is an intermediate web development project designed to replicate the user interface and functionality of Swiggy a popular food delivery platform.";
+        listone.style.marginBottom="25px"
+        var listtwo=document.createElement("li");
+        listtwo.innerText="The Swiggy Clone project is an intermediate web development project designed to replicate the user interface and functionality of Swiggy a popular food delivery platform.";
+        unorderlist.append(listone,listtwo);
+
+
+        // certificates section
+
+        var certificate=document.createElement("h3");
+        certificate.innerHTML="CERTIFICATES:<hr>";
+        var unorderlist3=document.createElement("ul");
+        var certificatelist1=document.createElement("li");
+        certificatelist1.innerHTML="Completed intensive <mark>Python for Data Science </mark> course by IBM.";
+        certificatelist1.style.marginBottom="15px";
+        var certificatelist2=document.createElement("li");
+        certificatelist2.innerHTML="Certificate on Basics of <mark>Python Programming </mark>Badge at IBM.";
+        certificatelist2.style.marginBottom="15px";
+        var certificatelist3=document.createElement("li");
+        certificatelist3.innerHTML="Pantech e-Learning in Workshop on <mark>5G communication</mark>.";
+        certificatelist3.style.marginBottom="15px";
+        var certificatelist4=document.createElement("li");
+        certificatelist4.innerHTML="Certified by Codegnan in <mark>C-Programming Bootcamp</mark>.";
+
+        unorderlist3.append(certificatelist1,certificatelist2,certificatelist3,certificatelist4);
+
+
+        // Skills section 
+
+        var skills=document.createElement("h3");
+        skills.innerHTML="SKILLS:<hr>"
+
+                        // Technical skills
+
+        var Technical=document.createElement("p");
+        Technical.innerHTML="<b>Technical Skills:</b> "+" "+  "C, SQL, Operating System, Computer Networks";
+
+                        // Technologies
+
+        var Technologies=document.createElement("p");
+        Technologies.innerHTML="<b>Technologies:</b> "+" "+  "HTML/CSS, Boot Strap, Java Script.";
+
+                        // Languages
+
+        var Language=document.createElement("p");
+        Language.innerHTML="<b>Languages:</b> "+" "+  "Python";
+
+                        // Developing Tools 
+
+        var developingTools=document.createElement("p");
+        developingTools.innerHTML="<b>Developing Tools:</b> "+" "+  "GIT(VCS), GitHub, VS code. ";
+
+
+        // Soft skills 
+
+        var softskills=document.createElement("h3");
+        softskills.innerHTML="SOFT SKILLS: <hr>";
+
+        var softskillul=document.createElement("ul");
+        var softskilllist=document.createElement("li");
+        softskilllist.innerText="Strong Analytical, Monitoring Skills, Problem Solving, Time Management, Communication Skills.";
+
+        softskillul.append(softskilllist);
+
+
+        // Append Section 
+
+         document.body.append(mainheading,details,linkedandgithub, obj, content, edu, course, courseyear,college,collegeperecentage,project,projectname,ul,projectnametwo,unorderlist,certificate,unorderlist3,skills,Technical,Technologies,Language,developingTools,softskills,softskillul);
+
+
+    </script>
+</body>
+
+</html>
